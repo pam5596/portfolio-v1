@@ -1,0 +1,245 @@
+html,body{
+	height: 100%;/*高さを100%にして描画エリアをとる*/
+    color:white;
+    font-family: 'Hack Nerd Font';
+    font-size:120%;
+}
+
+#particles-js{ 
+	position:fixed;/*描画固定*/
+	z-index:-1;/*描画を一番下に*/
+	width: 100%;
+	height: 100%;
+	background-color:#3cb371;/*背景色*/
+}
+
+#wrapper{
+	position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+	z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+	width:100%;
+	height: 100%;
+}
+
+/* navigater */
+nav ul{
+    z-index: 2;
+    display: table;
+    padding:0;
+    list-style: none;
+    position: fixed;
+    background-color: black;
+    opacity: 0.75;
+    width:100%;
+    height:70px;
+}
+
+nav li{
+    vertical-align: middle;
+    float:left;
+    padding:20px;
+    width:25%;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    padding:7% 8%;
+    position: relative;
+    opacity: 0.8;
+}
+
+nav a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    bottom: 10px;
+    transform: scale(0, 5);
+    transform-origin: left top;
+    transition: transform 0.3s;
+    }
+    
+nav a:hover::after {
+    transform: scale(1, 1);
+}
+
+nav a:hover{
+    color:white;
+    opacity: 1;
+}
+
+/* content */
+.content{
+    padding:4% 6%;
+}
+
+#about, #skill, #works, #contact{
+    padding-top:8%;
+}
+
+.content-h1{
+    width:100%;
+    padding:1%;
+    margin-bottom:6%;
+    font-size:200%;
+    border-bottom:4px dashed white;
+}
+
+.content-title{
+    width:48%;
+    padding:1%;
+    margin-bottom:4%;
+    font-size:200%;
+    border-bottom:4px dashed white;
+}
+
+.content-h2{
+    margin-top:5%;
+    padding:1%;
+    border-bottom:8px double white;
+}
+
+/* about */
+.right{
+    text-align: center;
+}
+.screen{
+    width:100%;
+    height:100%;
+    color:white;
+    padding: 4% 4% 2% 4%;
+    border:5px ridge white;
+    background-color:rgba(44,44,44,0.8);
+    border-radius: 15px;
+    list-style: none;
+    position: relative;
+    font-size: 80%;
+}.screen li{
+    margin-bottom: 2%;
+}
+
+.variable{
+    color:rgb(85, 198, 255);
+    font-size: 80%;
+}.variable-name{
+    color:rgba(181,206,168);
+    font-size: 130%;
+}
+.logo{
+    height:45%;
+    width:25%;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px black;
+}.screen div{
+    margin-top:2%;
+    text-align: center;
+}.logo:hover{
+    opacity: 0.8;
+}
+
+.face{
+    height:72%;
+    width:72%;
+    border-radius: 20px;
+    box-shadow:10px 10px 10px black;
+}
+
+.third{
+    padding:0% 5%;
+}.third-list{
+    padding:0% 5%;
+}.third li{
+    list-style: none;
+    font-size: 120%;
+    padding:2% 2%;
+}.icon{
+    width:20%;
+    height:20%;
+}
+
+
+footer{
+    text-align: center;
+}
+
+
+@media (max-width:1110px) {
+    body{
+        font-size:105%;
+    }
+}
+@media (max-width:1000px) {
+    body{
+        font-size:90%;
+    }
+    nav li{
+        vertical-align: middle;
+        float:left;
+        padding:20px 10px;
+        width:25%;
+    }
+    
+    nav a{
+        color:white;
+        text-decoration: none;
+        font-size: 20px;
+        padding:10px 15px;
+        position: relative;
+        opacity: 0.8;
+    }
+    nav a::after {
+        position: absolute;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: white;
+        bottom: 8px;
+        transform: scale(0, 5);
+        transform-origin: left top;
+        transition: transform 0.3s;
+    }
+}
+@media (max-width:900px){
+    body{
+        font-size:60%;
+    }
+}
+@media (max-width:670px) {
+    body{
+        font-size:50%;
+    }
+    nav li{
+        vertical-align: middle;
+        float:left;
+        padding:5px;
+        width:50%;
+    }
+    
+    nav a{
+        color:white;
+        text-decoration: none;
+        font-size: 20px;
+        padding:5px 8px;
+        position: relative;
+        opacity: 0.8;
+    }
+    nav a::after {
+        position: absolute;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: white;
+        bottom: 2px;
+        transform: scale(0, 5);
+        transform-origin: left top;
+        transition: transform 0.3s;
+    }
+    .content{
+        padding:10% 6%;
+    }
+}

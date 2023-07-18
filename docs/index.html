@@ -4,86 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ポートフォリオサイト</title>
-    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <nav>
-      <ul class="menu">
-        <li class="menu"><a href="#about">About</a></li>
-        <li class="menu"><a href="#skill">Skill</a></li>
-        <li class="menu"><a href="#works">Works</a></li>
-        <li class="menu"><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    
-    <div id="about">
-      <h2>About</h2>
-      <ul>
-        <li>Ryosuke Saiki</li>
-        <li>Faculty of Data Science, Musashino University</li>
-        <li>趣味：DTM作曲・リズムゲーム・独自開発</li>
-        <li>目標：ITエンジニア職への就職を目指す
-        </li>
-      </ul>
+    <div id="particles-js"></div>
+    <div id="wrapper">
+      <nav class="text-center">
+        <ul>
+          <li><a href="#about">> About</a></li>
+          <li><a href="#skill">> Skill</a></li>
+          <li><a href="#works">> Works</a></li>
+          <li><a href="#contact">> Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="content">
+        <div id="about">
+          <div class="row align-items-start">
+            <div class="col left">
+              <h1 class="content-h1">About</h1>
+              <ul class="screen">
+                <li><span class="variable">name</span> = <span class="variable-name">Ryosuke Saiki (佐伯 綾亮)</span></li>
+                <li><span class="variable">university</span> = <span class="variable-name">Musashino University</span></li>
+                <li><span class="variable">faculty</span> = <span class="variable-name">Faculty of Data Science</span><br>
+                <div><a href="https://www.musashino-u.ac.jp/academics/faculty/data_science/" target="_blank"><img class="logo img-fluid" src="image/img2.jpg"></a></div>
+              </ul>
+            </div>
+            <div class="col right">
+              <img class="face img-fluid" src="image/img1.png">
+            </div>
+          </div>
+          <div class="row align-items-end">
+            <div class="col third">
+              <h2 class="content-h2">hobby</h2>
+              <ul class="third-list">
+                <li class="third-li"><img class="icon" src="image/img3.png"> DTM Compose</li>
+                <li class="third-li"><img class="icon" src="image/img4.png"> Game</li>
+                <li class="third-li"><img class="icon" src="image/img5.png"> Programming</li>
+              </ul>
+            </div>
+            <div class="col third">
+              <h2 class="content-h2">likes</h2>
+              <ul class="third-list">
+                <li><img class="icon" src="image/img6.png"> Coffee</li>
+                <li><img class="icon" src="image/img7.png"> Cats</li>
+                <li><img class="icon" src="image/img8.png"> Astronomy</li>
+              </ul>              
+            </div>
+          </div>
+
+        <div id="skill">
+        <h1 class="content-title">Skill</h1>
+          
+        </div>
+        
+        <div id="works">
+          <h1 class="content-title">Works</h1>
+            <div id="artifacts">
+              <h4>成果物</h4>
+              <ul>
+                  <li>楽曲メディアコンテンツを対象としたメロディ特徴量類似計量による自動伴奏割り当て方式
+                      --「未来創造プロジェクト - 学生成果発表会 2022」より</li>
+                  <li>楽曲の印象色とその印象語を掲示するシステム</li>
+                  <li>リズムゲーム「太鼓の達人」の譜面難易度距離計算によるレコメンドシステム</li>
+                  <li>ピアノ楽曲をゲーム風音楽に自動変換するシステム</li>
+                  <li>youtubeコンテンツを音声・動画フォーマット変換するwebアプリ</li>
+              </ul>
+            </div>
+            <div id="writings">
+              <h4>執筆物</h4>
+              <ul>
+                  <li>music21でMIDIを扱う -- Qiita</li>
+              </ul>
+            </div>
+            <div id="awards">
+              <h4>受賞・資格</h4>
+              <ul>
+                  <li>株式会社メディア・トラスト賞
+                      --「未来創造プロジェクト - 学生成果発表会 2022」より</li>
+              </ul>
+            </div>
+        </div>
+
+        <div id="contact">
+          <h1 class="content-title">Contact</h1>
+          <ul>
+            <li>email：s2222015[at]st.musashino-u.ac.jp</li>
+            <li><a href="https://github.com/pdmuds4" target="_blank">github</a></li>
+            <li><a href="https://twitter.com/pam_5596" target="_blank">twitter</a></li>
+            <li><a href="https://qiita.com/pam5596" target="_blank">qiita</a></li>
+          </ul>
+        </div>
+        
+        <footer>©︎2023 Ryosuke Saiki</footer>
+      </div>
     </div>
 
-    <div id="skill">
-    <h2>Skill</h2>
-      <h4>Python</h4>
-      <ul>
-          <li>音声マイニング(90%)</li>
-          <li>Webスクレイピング(80%)</li>
-          <li>データベース(60%)</li>
-          <li>Webアプリ開発(50%)</li>
-          <li>データサイエンス(30%)</li>
-          <li>機械学習(20%)</li>
-          <li>WebAPI(10%)</li>
-      </ul>
-      <h4>HTML&CSS</h4>
-      <h4>JavaScript</h4>
-      <h4>Unity (C#)</h4>
-    </div>
-    
-    <div id="works">
-      <h2>Works</h2>
-        <div id="artifacts">
-          <h4>成果物</h4>
-          <ul>
-              <li>楽曲メディアコンテンツを対象としたメロディ特徴量類似計量による自動伴奏割り当て方式
-                  --「未来創造プロジェクト - 学生成果発表会 2022」より</li>
-              <li>楽曲の印象色とその印象語を掲示するシステム</li>
-              <li>リズムゲーム「太鼓の達人」の譜面難易度距離計算によるレコメンドシステム</li>
-              <li>ピアノ楽曲をゲーム風音楽に自動変換するシステム</li>
-              <li>youtubeコンテンツを音声・動画フォーマット変換するwebアプリ</li>
-          </ul>
-        </div>
-        <div id="writings">
-          <h4>執筆物</h4>
-          <ul>
-              <li>music21でMIDIを扱う -- Qiita</li>
-          </ul>
-        </div>
-        <div id="awards">
-          <h4>受賞・資格</h4>
-          <ul>
-              <li>株式会社メディア・トラスト賞
-                  --「未来創造プロジェクト - 学生成果発表会 2022」より</li>
-          </ul>
-        </div>
-    </div>
-
-    <div id="contact">
-      <h2>Contact</h2>
-      <ul>
-        <li>email：s2222015[at]st.musashino-u.ac.jp</li>
-        <li><a href="https://github.com/pdmuds4" target="_blank">github</a></li>
-        <li><a href="https://twitter.com/pam_5596" target="_blank">twitter</a></li>
-        <li><a href="https://qiita.com/pam5596" target="_blank">qiita</a></li>
-      </ul>
-    </div>
-    
-    <footer>©︎2023 Ryosuke Saiki</footer>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particles.js"></script>
   </body>
   
 </html>
