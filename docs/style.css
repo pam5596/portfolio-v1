@@ -76,7 +76,7 @@ nav a:hover{
 
 /* content */
 .content{
-    padding:4% 6%;
+    padding:4% 6% 1% 6%;
 }
 
 #about, #skill, #works, #contact{
@@ -94,7 +94,7 @@ nav a:hover{
 .content-title{
     width:48%;
     padding:1%;
-    margin-bottom:4%;
+    margin-bottom:2%;
     font-size:200%;
     border-bottom:4px dashed white;
 }
@@ -102,9 +102,17 @@ nav a:hover{
 .content-h2{
     margin-top:5%;
     padding:1%;
-    font-size:180%;
+    font-size:160%;
     border-bottom:8px double white;
 }
+
+.content-h3{
+    margin-top:3%;
+    padding:0.6%;
+    font-size:140%;
+    border-bottom:8px double white;
+}
+
 
 /* about */
 .right{
@@ -115,12 +123,12 @@ nav a:hover{
     height:100%;
     color:white;
     padding: 4% 4% 2% 4%;
-    border:5px ridge white;
+    border:3px solid white;
     background-color:rgba(44,44,44,0.8);
-    border-radius: 15px;
     list-style: none;
     position: relative;
     font-size: 80%;
+    box-shadow: 5px 5px 5px black;
 }.screen li{
     margin-bottom: 2%;
 }
@@ -135,7 +143,7 @@ nav a:hover{
 .logo{
     height:45%;
     width:25%;
-    border-radius: 20px;
+    border-radius: 5% 5%;
     box-shadow: 4px 4px 4px black;
 }.screen div{
     margin-top:2%;
@@ -147,15 +155,16 @@ nav a:hover{
 .face{
     height:72%;
     width:72%;
-    border-radius: 20px;
+    border-radius: 5% 5%;
     box-shadow:10px 10px 10px black;
 }
 
-.third{
+.sub-c{
+    padding:0% 3%;
+    width: 33%;
+}.sub-c-list{
     padding:0% 5%;
-}.third-list{
-    padding:0% 5%;
-}.third li{
+}.sub-c li{
     list-style: none;
     font-size: 150%;
     padding:2% 2%;
@@ -165,9 +174,132 @@ nav a:hover{
 }
 
 /* skill */
+.icon2{
+    width:15%;
+    height:15%;
+}
+
+.skill-content{
+    height:10%;
+    display: flex;
+    margin:5% 0%;
+
+}.skill-name{
+    width:49%;
+    text-align: center;
+    font-size: 100%;
+
+}.skill-gage{
+    margin-left:2%;
+    text-align: left;
+    background-color:white;
+    color:#3cb371;
+    border-radius: 2px;
+    box-shadow: 3px 3px 3px black;
+    padding-left:2%;
+    font-size: 80%;
+}
+
+/* work */
+.icon3{
+    width:5%;
+    height:5%;
+}
+.artifacts-list{
+    margin:2%;
+    display: flex;
+}
+
+.works-screen{
+    width:31%;
+    background-color:rgba(44,44,44,0.8);
+    padding:1%;
+    margin:1%;
+    border: 2px solid white;
+    font-size: 90%;
+    box-shadow: 4px 4px 4px black;
+}.works-screen p{
+    margin-bottom: 1%;
+}.works-screen a{
+    text-align: center;
+}.works-screen img{
+    width: 100%;
+    height: auto;
+    padding:2%;
+    opacity: 1;
+}.works-screen img:hover{
+    opacity: 0.9;
+    border: 1px solid white;
+}
+.date{
+    font-size: 70%;
+    text-align: center;
+    border-bottom: 2px dotted white;
+}
+.title{
+    margin-top: 3%;
+    font-size:90%;
+}
+.subtitle{
+    font-size:70%;
+}
+
+/* contact */
+.contact-list{
+    margin:2%;
+    display: flex;
+}
+.contacts{
+    width:48%;
+    margin:1%;
+    padding:0.5%;
+    box-shadow: 2px 2px 2px black;
+    text-align: center;
+    opacity: 1;
+    text-decoration: none;
+    border:6px double white;
+    color: white;
+}.contacts:hover{
+    opacity: 0.8;
+    color: white;
+    border:6px solid white;
+}
+
+.icon5{
+    width:10%;
+    height:auto;
+    margin-right: 3%;
+
+}.email{
+    background-color: white;
+    border:6px double black;
+    color:black;  
+}.email:hover{
+    border:6px solid black;
+    color:black;
+}.github{
+    background-color: black;
+}.twitter{   
+    background-color: rgba(84,172,238);
+}.qiita{
+    background-color: rgba(85,197,0);
+}.youtube{
+    background-color: rgba(247,0,3);
+}.soundcloud{
+    background-color: rgba(247,83,3);
+}
+
+
+
+
+
+
+
 
 footer{
+    opacity: 0.8;
     text-align: center;
+    font-size: 70%;
 }
 
 
@@ -181,36 +313,23 @@ footer{
         font-size:90%;
     }
     nav li{
-        vertical-align: middle;
-        float:left;
         padding:20px 10px;
-        width:25%;
     }
     
     nav a{
-        color:white;
-        text-decoration: none;
-        font-size: 20px;
         padding:10px 15px;
-        position: relative;
-        opacity: 0.8;
     }
     nav a::after {
-        position: absolute;
-        left: 0;
-        content: '';
-        width: 100%;
-        height: 2px;
-        background: white;
         bottom: 8px;
         transform: scale(0, 5);
-        transform-origin: left top;
-        transition: transform 0.3s;
     }
 }
 @media (max-width:900px){
     body{
         font-size:70%;
+    }
+    #about, #skill, #works, #contact{
+        padding-top:10%;
     }
 }
 @media (max-width:670px) {
@@ -218,34 +337,29 @@ footer{
         font-size:50%;
     }
     nav li{
-        vertical-align: middle;
-        float:left;
         padding:5px;
         width:50%;
     }
     
     nav a{
-        color:white;
-        text-decoration: none;
-        font-size: 20px;
         padding:5px 8px;
-        position: relative;
-        opacity: 0.8;
     }
     nav a::after {
-        position: absolute;
-        left: 0;
-        content: '';
-        width: 100%;
-        height: 2px;
-        background: white;
         bottom: 2px;
-        transform: scale(0, 5);
-        transform-origin: left top;
-        transition: transform 0.3s;
     }
     .content{
         padding:11% 6%;
+    }
+    #about, #skill, #works, #contact{
+        padding-top:15%;
+    }
+    .skill-name{
+        font-size: 80%;
+    }.skill-gage{
+        margin-left:8%;
+    }
+    .works-screen{
+        width:48%;
     }
 }
 @media (max-width:400px) {
@@ -255,4 +369,22 @@ footer{
     .content{
         padding:20% 6%;
     }
+    #about, #skill, #works, #contact{
+        padding-top:25%;
+    }
+    .sub-c{
+        width: 100%;
+    }
+    .sub-c li{
+        font-size: 130%;
+    }
+    .skill-name{
+        font-size: 200%;
+    }.skill-gage{
+        margin-left:15%;
+    }
+    .works-screen{
+        width:100%;
+    }
+    
 }
